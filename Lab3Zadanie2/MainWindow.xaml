@@ -1,0 +1,27 @@
+﻿<Window x:Class="Lab3Zadanie2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3Zadanie2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,21,10">
+        <Label x:Name="lblCena" Content="Cena biletu" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <ListBox x:Name="listbox" HorizontalAlignment="Left" Height="118" Margin="40,94,0,0" VerticalAlignment="Top" Width="202" FontSize="16">
+            <ListBoxItem Content="Rzeszów"></ListBoxItem>
+            <ListBoxItem Content="Warszawa"></ListBoxItem>
+            <ListBoxItem Content="Radom"></ListBoxItem>
+            <ListBoxItem Content="Lublin"></ListBoxItem>
+            <ListBoxItem Content="Gdańsk"></ListBoxItem>
+            <ListBoxItem Content="Ustka"></ListBoxItem>
+        </ListBox>
+        <Label x:Name="lblMiasto" Content="Wybierz miasto"  Margin="40,58,537,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblBilet" Content="Wybierz bilet"  Margin="305,58,272,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="rdrNormalny" Content="Normalny" HorizontalAlignment="Left" Margin="305,103,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="rdrUstawowy" Content="Ustawowy" HorizontalAlignment="Left" Margin="305,133,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="rdrSamorzad" Content="Samorządowy" HorizontalAlignment="Left" Margin="305,163,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="btnWylicz" Content="Wylicz" HorizontalAlignment="Left" Height="29" Margin="568,122,0,0" VerticalAlignment="Top" Width="176" FontSize="16" FontWeight="Bold" Click="btnWylicz_Click"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="46" Margin="141,306,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="561" FontSize="16"/>
+    </Grid>
+</Window>
